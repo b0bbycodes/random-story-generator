@@ -1,0 +1,105 @@
+body{
+    background-color:
+    #effff2 ;
+
+}
+
+.heading{
+   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+   
+    width: 50%;
+    color: rgb(40, 85, 116);
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+}
+
+/* h1::after{
+    content: "";
+    width: 100px;
+    height: 4px;
+    background: rgb(40, 85, 116);
+    position: absolute;
+    bottom: -5px;
+    left: 18rem;
+} */
+
+.lorem-text{
+    display: grid;
+    place-items: center;
+
+}
+.result{
+
+    text-align: center;
+    color:
+    #4085b2  ;
+    font-size: 18px;
+    border: 1px solid #4085b2;
+    border-radius: 5px;
+    margin: 1.6rem .4rem;
+    padding: 15px;
+    width: 80%;
+    line-height: 1.7;
+}
+
+label{
+    font-size: 20px;
+    color: rgb(40, 85, 116);
+    font-weight: 600;
+}
+
+.lorem-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+input{
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 2px;
+}
+input:focus{
+    outline: none;
+
+}
+input::placeholder{
+    color: black;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+button{
+    padding: 5px 17px;
+    border: 1px solid grey;
+    border-radius: 2px;
+    background: linear-gradient(45deg,white,  #4085b2 , rgb(35, 111, 161) );
+    transition: 0.4s;
+
+}
+
+button:active{
+    /* background: linear-gradient(45deg,  rgb(40, 85, 116) 5% , #4085b2 50%, white );  */
+    transform: scale(0.95);
+
+}
+
+/* media query */
+@media(max-width:768px){
+    h1{
+        font-size: 25px;
+        width: 75%;
+    }
+    h1::after{
+        display: none;
+
+    }
+}
